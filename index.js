@@ -4,8 +4,9 @@ require("./src/configs/db.config");
 const express = require("express");
 const app = express();
 const usuariosRouter = require('./src/routes/usuarios.route');
-const authRouter = require('./src/routes/auth.route')
-const promocionesRouter = require('./src/routes/promociones.route')
+const authRouter = require('./src/routes/auth.route');
+const promocionesRouter = require('./src/routes/promociones.route');
+const productosRouter = require('./src/routes/productos.route');
 
 //   TODO Ejemplo de importación de archivo de rutas
 // * const usuariosRouter = require('./src/routes/usuarios.route');
@@ -17,8 +18,10 @@ app.use(express.json());
 app.use('/usuarios', usuariosRouter);
 app.use('/auth', authRouter);
 app.use('/promociones', promocionesRouter);
+app.use("/productos", productosRouter);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log("API escuchando en el puerto " + PORT);
 });
+

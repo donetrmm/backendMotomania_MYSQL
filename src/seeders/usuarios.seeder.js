@@ -7,11 +7,11 @@ const saltosBcrypt = parseInt(process.env.SALTOS_BCRYPT);
 
 const sequelize = new Sequelize({
   dialect: 'mysql',
-  host: 'localhost',
-  port: 3006,
-  username: 'root',
-  password: 'Belatrix12?',
-  database: 'mydb',
+  host: process.env.MYSQL_HOST,
+  port: process.env.MYSQL_PORT,
+  username: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
 });
 
 const seedUsuarios = async () => {
