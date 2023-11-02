@@ -1,0 +1,473 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api-mysql-motomania",
+    "dateExported": "2023-11-02T21:53:36.536Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "0950153c-7774-4ed4-ba76-8c482cbbaacf",
+            "name": "usuarios",
+            "containerId": "",
+            "created": "2023-11-02T21:31:48.026Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a48f36a7-4f47-4c5f-8fc4-8d308faeceee",
+            "name": "auth",
+            "containerId": "",
+            "created": "2023-11-02T21:31:48.027Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "71ef988f-ca21-4bed-8e67-0b0792258b21",
+            "name": "promociones",
+            "containerId": "",
+            "created": "2023-11-02T21:31:48.028Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "803a0564-5711-44ef-84a1-a0b9f1643a51",
+            "name": "productos",
+            "containerId": "",
+            "created": "2023-11-02T21:31:48.029Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "866848fb-106a-46a7-9951-7d60b06c3de2",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "0950153c-7774-4ed4-ba76-8c482cbbaacf",
+            "name": "createUsuario",
+            "url": "http://localhost:8081/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-02T21:31:48.026Z",
+            "modified": "2023-11-02T21:31:48.026Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmFUb2tlbiJ9LCJpYXQiOjE2OTg3MjA4NjEsImV4cCI6MTY5ODcyODA2MX0.8EX6WAZtun1GsznUjIISWg8yS03MH7bbvhZ_DJKRYN0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"NombrePrueba\",\n  \"apellido\": \"ApellidoPrueba\",\n  \"usuario\": \"prueba3\",\n  \"password\": \"prueba\",\n  \"createdBy\": \"admin\" \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c21a24d4-357b-4d59-a534-7e2408917ec3",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "0950153c-7774-4ed4-ba76-8c482cbbaacf",
+            "name": "obtenerPorUsuario",
+            "url": "http://localhost:8081/usuarios/pruebaToken",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-02T21:31:48.027Z",
+            "modified": "2023-11-02T21:31:48.027Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmFUb2tlbiJ9LCJpYXQiOjE2OTg3MjA4NjEsImV4cCI6MTY5ODcyODA2MX0.8EX6WAZtun1GsznUjIISWg8yS03MH7bbvhZ_DJKRYN0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "489b714c-5d03-428d-a669-2b840bd05928",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "0950153c-7774-4ed4-ba76-8c482cbbaacf",
+            "name": "deleteLogico",
+            "url": "http://localhost:8081/usuarios/pruebaToken/admin",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-11-02T21:31:48.028Z",
+            "modified": "2023-11-02T21:31:48.028Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmFUb2tlbiJ9LCJpYXQiOjE2OTg3MjA4NjEsImV4cCI6MTY5ODcyODA2MX0.8EX6WAZtun1GsznUjIISWg8yS03MH7bbvhZ_DJKRYN0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b5a80be5-06b0-4b60-9478-d6677cbbb1e2",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "0950153c-7774-4ed4-ba76-8c482cbbaacf",
+            "name": "obtenerTodosLosUsuarios",
+            "url": "http://localhost:8081/usuarios",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-02T21:31:48.029Z",
+            "modified": "2023-11-02T21:31:48.029Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmFUb2tlbiJ9LCJpYXQiOjE2OTg3MjA4NjEsImV4cCI6MTY5ODcyODA2MX0.8EX6WAZtun1GsznUjIISWg8yS03MH7bbvhZ_DJKRYN0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1f43913e-b697-46f8-a0a3-f35c988978bd",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "0950153c-7774-4ed4-ba76-8c482cbbaacf",
+            "name": "actualizarPorUsuario",
+            "url": "http://localhost:8081/usuarios/pruebaToken",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-11-02T21:31:48.030Z",
+            "modified": "2023-11-02T21:31:48.030Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmFUb2tlbiJ9LCJpYXQiOjE2OTg3MjA4NjEsImV4cCI6MTY5ODcyODA2MX0.8EX6WAZtun1GsznUjIISWg8yS03MH7bbvhZ_DJKRYN0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Iskander\",\n  \"apellido\": \"Ramos\",\n  \"password\": \"brandi12\",\n  \"updatedBy\": \"admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4d3623ac-5653-46d2-a6ed-8d36242bb2e9",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "a48f36a7-4f47-4c5f-8fc4-8d308faeceee",
+            "name": "login",
+            "url": "http://localhost:8081/auth/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-11-02T21:31:48.031Z",
+            "modified": "2023-11-02T21:31:48.031Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\":\"Usuario1\",\n  \"password\":\"password1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce4e404a-1454-4c77-9f4f-e0fea454cd3c",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "71ef988f-ca21-4bed-8e67-0b0792258b21",
+            "name": "createPromocion",
+            "url": "http://localhost:8081/promociones",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-11-02T21:31:48.032Z",
+            "modified": "2023-11-02T21:31:48.032Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmEzIn0sImlhdCI6MTY5ODk0ODEwMywiZXhwIjoxNjk4OTU1MzAzfQ.wecP34lJHBtYj02qvzoSzaLb-s6uO1LbfqDFWWXoc-8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id_nombre_promocion",
+                        "value": "prueba2"
+                    },
+                    {
+                        "name": "created_by",
+                        "value": "admin"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "c:\\Users\\Iskander Ramos\\Downloads\\smashcolor2.webp"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "151e0f40-7be0-4d8b-a73a-1892748eaafc",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "71ef988f-ca21-4bed-8e67-0b0792258b21",
+            "name": "obtenerTodasPromociones",
+            "url": "http://localhost:8081/promociones",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-11-02T21:31:48.033Z",
+            "modified": "2023-11-02T21:31:48.033Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cdf68dff-b517-43ab-83ac-bd96081c000c",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "71ef988f-ca21-4bed-8e67-0b0792258b21",
+            "name": "obtenerPromocion",
+            "url": "http://localhost:8081/promociones/prueba2",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-11-02T21:31:48.034Z",
+            "modified": "2023-11-02T21:31:48.034Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmEzIn0sImlhdCI6MTY5ODk0ODk0OSwiZXhwIjoxNjk4OTU2MTQ5fQ.-hSUafksCjOpe_YLrlQLgzQWBv_ffN7dKjaChFT3dYE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "caf817fb-31b3-4521-b1e2-8d3c573b6200",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "71ef988f-ca21-4bed-8e67-0b0792258b21",
+            "name": "actualizarPromocion",
+            "url": "http://localhost:8081/promociones/prueba2",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-11-02T21:31:48.035Z",
+            "modified": "2023-11-02T21:31:48.035Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmEzIn0sImlhdCI6MTY5ODk0ODk0OSwiZXhwIjoxNjk4OTU2MTQ5fQ.-hSUafksCjOpe_YLrlQLgzQWBv_ffN7dKjaChFT3dYE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "updated_by",
+                        "value": "admin"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "c:\\Users\\Iskander Ramos\\Downloads\\41N6t-Qys0L.webp"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3057d74f-a422-43c2-a6df-46496ac5ce1e",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "71ef988f-ca21-4bed-8e67-0b0792258b21",
+            "name": "eliminarPromocion",
+            "url": "http://localhost:8081/promociones/prueba2/admin",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-11-02T21:31:48.036Z",
+            "modified": "2023-11-02T21:31:48.036Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmEzIn0sImlhdCI6MTY5ODk0ODk0OSwiZXhwIjoxNjk4OTU2MTQ5fQ.-hSUafksCjOpe_YLrlQLgzQWBv_ffN7dKjaChFT3dYE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "654a88e4-04b2-45fa-8961-4817ca19f254",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "803a0564-5711-44ef-84a1-a0b9f1643a51",
+            "name": "crearProducto",
+            "url": "http://localhost:8081/productos",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-11-02T21:31:48.037Z",
+            "modified": "2023-11-02T21:31:48.037Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmEzIn0sImlhdCI6MTY5ODk0ODk0OSwiZXhwIjoxNjk4OTU2MTQ5fQ.-hSUafksCjOpe_YLrlQLgzQWBv_ffN7dKjaChFT3dYE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "codigo",
+                        "value": "80-5320-001"
+                    },
+                    {
+                        "name": "modelo",
+                        "value": "LUMINAR NEGRO MATE CON LED"
+                    },
+                    {
+                        "name": "marca",
+                        "value": "RODA"
+                    },
+                    {
+                        "name": "tipo_producto",
+                        "value": "{ \"categoria\": \"Cascos\", \"atributo2\": \"Valor2\" }"
+                    },
+                    {
+                        "name": "created_by",
+                        "value": "ADMIN"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "c:\\Users\\Iskander Ramos\\Downloads\\41N6t-Qys0L.webp"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5662375-6aed-46e6-a070-10e882230336",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "803a0564-5711-44ef-84a1-a0b9f1643a51",
+            "name": "obtenerProducto",
+            "url": "http://localhost:8081/productos/80-5320-001",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-11-02T21:31:48.038Z",
+            "modified": "2023-11-02T21:31:48.038Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmEzIn0sImlhdCI6MTY5ODk0ODk0OSwiZXhwIjoxNjk4OTU2MTQ5fQ.-hSUafksCjOpe_YLrlQLgzQWBv_ffN7dKjaChFT3dYE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3ede345c-7944-43fa-9963-04f725f9dd37",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "803a0564-5711-44ef-84a1-a0b9f1643a51",
+            "name": "updateProducto",
+            "url": "http://localhost:8081/productos/80-5320-001",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2023-11-02T21:31:48.039Z",
+            "modified": "2023-11-02T21:31:48.039Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmEzIn0sImlhdCI6MTY5ODk0ODk0OSwiZXhwIjoxNjk4OTU2MTQ5fQ.-hSUafksCjOpe_YLrlQLgzQWBv_ffN7dKjaChFT3dYE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "modelo",
+                        "value": "AIRCUT SMASH COLORES"
+                    },
+                    {
+                        "name": "marca",
+                        "value": "KOV"
+                    },
+                    {
+                        "name": "updated_by",
+                        "value": "admin"
+                    },
+                    {
+                        "name": "tipo_producto",
+                        "value": "{ tipo: \"Casco\", talla: \"L\"}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "c:\\Users\\Iskander Ramos\\Downloads\\smashcolor2.webp"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "530baef0-26d3-440a-ac9f-1d9458ab182b",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "803a0564-5711-44ef-84a1-a0b9f1643a51",
+            "name": "obtenerTodosProductos",
+            "url": "http://localhost:8081/productos?page=1&limit=2",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-11-02T21:31:48.040Z",
+            "modified": "2023-11-02T21:31:48.040Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4030f4eb-a260-4123-abb1-2f4e9911fe36",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "803a0564-5711-44ef-84a1-a0b9f1643a51",
+            "name": "deleteProducto",
+            "url": "http://localhost:8081/productos/80-5320-001",
+            "method": "DELETE",
+            "sortNum": 170000,
+            "created": "2023-11-02T21:31:48.041Z",
+            "modified": "2023-11-02T21:31:48.041Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJwcnVlYmEzIn0sImlhdCI6MTY5ODk0ODk0OSwiZXhwIjoxNjk4OTU2MTQ5fQ.-hSUafksCjOpe_YLrlQLgzQWBv_ffN7dKjaChFT3dYE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"deleted_by\":\"admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c59e667f-9634-4d01-8169-45e01deb2ea6",
+            "colId": "81a59099-98be-4808-82a9-1fcf5d2d2255",
+            "containerId": "803a0564-5711-44ef-84a1-a0b9f1643a51",
+            "name": "getCategoria",
+            "url": "http://localhost:8081/productos/categorias/Cascos",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-11-02T21:31:48.042Z",
+            "modified": "2023-11-02T21:31:48.042Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InVzdWFyaW8iOiJ1c3VhcmlvMSJ9LCJpYXQiOjE2OTg5NTcxMzksImV4cCI6MTY5ODk2NDMzOX0.-Hs9iTEORvs59O72Qh6_Wg8vvLi5pJxKsIp_tMtU110"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
