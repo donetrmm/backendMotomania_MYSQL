@@ -1,19 +1,23 @@
-const mysql = require('mysql2');
+const { Sequelize } = require('sequelize');
 
-const connection = mysql.createConnection({
+const sequelize = new Sequelize({
+  dialect: 'mysql',
   host: process.env.MYSQL_HOST,
-  user: process.env.MYSQL_USER,
+  port: process.env.MYSQL_PORT,
+  username: process.env.MYSQL_USER,
   password: process.env.MYSQL_PASSWORD,
   database: process.env.MYSQL_DATABASE,
-  port: process.env.MYSQL_PORT
+  define: {
+    timestamps: false, 
+  },
 });
 
-connection.connect((err) => {
-  if (err) {
-    console.error('Error al conectar a MySQL: ' + err.message);
-  } else {
+sequelize.authenticate()
+  .then(() => {
     console.log('Conectado a MySQL');
-  }
-});
+  })
+  .catch((error) => {
+    console.error('Error al conectar a MySQL:', error);
+  });
 
-module.exports = connection;
+module.exports = sequelize;
